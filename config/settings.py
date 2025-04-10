@@ -14,7 +14,7 @@ SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".company_analyzer_setting
 DEFAULT_SETTINGS = {
     "tavily_api_key": "",
     "openai_api_key": "",
-    "model_name": "gpt-4o-mini"
+    "model_name": "chatgpt-4o-latest"
 }
 
 def get_settings() -> Dict[str, Any]:

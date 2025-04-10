@@ -3,6 +3,7 @@
 import logging
 import os
 import sys
+import asyncio
 
 from config.logging_config import setup_logging
 from ui.app import create_gradio_app
@@ -21,11 +22,10 @@ def main():
         
         # アプリケーションの起動
         app.launch(
-            server_name="127.0.0.1",     # すべてのネットワークインターフェイスでリッスン
+            server_name="127.0.0.1",     # ローカルホストでリッスン
             server_port=7860,          # デフォルトのGradioポート
             share=False,               # 公開リンクは不要
             inbrowser=True             # ブラウザを自動で開く
-            # favicon_path パラメータを削除
         )
         
     except Exception as e:

@@ -1,0 +1,8 @@
+gradio>=4.0.0
+openai>=1.0.0
+tavily-python>=0.2.8
+mcp>=0.0.3
+requests>=2.31.0
+python-dotenv>=1.0.0
+asyncio>=3.4.3
+markdown>=3.4.0
